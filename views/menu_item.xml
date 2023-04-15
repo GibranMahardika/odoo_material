@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="showroom_root_menu"
+        name="Showroom"
+        groups="showroom.group_material_admin"
+        sequence="1" />
+
+    <menuitem
+        id="master_root_menu"
+        name="Master"
+        groups="showroom.group_material_admin"
+        parent="showroom.showroom_root_menu"
+        sequence="1" />
+
+    <menuitem
+        id="material_menu"
+        name="Material"
+        action="showroom.master_material_action"
+        groups="showroom.group_material_admin"
+        parent="showroom.master_root_menu"
+        sequence="1" />
+</odoo>
